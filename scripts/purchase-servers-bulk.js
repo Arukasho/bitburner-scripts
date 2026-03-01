@@ -1,7 +1,7 @@
 /** @param {NS} ns */
 export async function main(ns) {
     // How much RAM each purchased server will have. In this case, it'll
-    // be 8GB.
+    // be 1024 GB.
     const ram = 1024;
 
     // Iterator we'll use for our loop
@@ -15,7 +15,7 @@ export async function main(ns) {
             // If we have enough money, then:
             //  1. Purchase the server
             //  2. Increment our iterator to indicate that we've bought a new server
-            let hostname = ns.purchaseServer("myserver-" + i, ram);
+            let hostname = ns.purchaseServer("pserv-" + i, ram);
             ++i;
         }
         //Make the script wait for a second before looping again.
