@@ -3,9 +3,9 @@ export async function main(ns) {
   // This script assumes root access to target is true. 
 
   // Initial Parameters
-  const mainHost = "home"; // main server to run hack loop
-  const prepHost = "home"; // initial server to run prep loop
-  const target = "foodnstuff";
+  const mainHost = ns.args[0]; // main server to run hack loop
+  const prepHost = ns.args[1]; // initial server to run prep loop
+  const target = ns.args[2];
   const targetMaxMoney = ns.getServerMaxMoney(target);
   let targetCurrentMoney = ns.getServerMoneyAvailable(target);
   let growMultiplier = targetMaxMoney / targetCurrentMoney;
