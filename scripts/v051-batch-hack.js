@@ -13,7 +13,7 @@ export async function main(ns) {
 
   function getHackThread() {
     let moneyPerThread = ns.hackAnalyze(target);
-    let hackThread = Math.ceil((moneyToStealPerHack / 100) / moneyPerThread);
+    let hackThread = Math.ceil((moneyToStealPerHack / 100)/ moneyPerThread);
   
     return hackThread;
   }
@@ -34,7 +34,7 @@ export async function main(ns) {
 
   function getBatchGrowThread() {
     let moneyPerThread = ns.hackAnalyze(target);
-    let hackThread = Math.ceil((moneyToStealPerHack / 100) / moneyPerThread);
+    let hackThread = Math.ceil((moneyToStealPerHack / 100)/ moneyPerThread);
     let moneyHacked = hackThread * moneyPerThread;
 
     let growMultiplier = targetMaxMoney / (targetMaxMoney - moneyHacked);
