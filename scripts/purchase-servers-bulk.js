@@ -1,8 +1,7 @@
 /** @param {NS} ns */
 export async function main(ns) {
-    // How much RAM each purchased server will have. In this case, it'll
-    // be 1024 GB.
-    const ram = 1024;
+    // How much RAM each purchased server will have. 
+    const ram = ns.args[0];
 
     // Iterator we'll use for our loop
     let i = 0;

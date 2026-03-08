@@ -1,7 +1,7 @@
 /** @param {NS} ns */
 export async function main(ns) {
-  const hackScript = "v061-batch-hack.js";
-  const scriptRunServer = "pserv-1";
+  const hackScript = "batch_algorithm/v061-batch-hack";
+  const scriptRunServer = "pserv-0"
   const numOfBatch = 500;
 
   const server = "omega-net"

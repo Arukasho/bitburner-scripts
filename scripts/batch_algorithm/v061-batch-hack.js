@@ -129,7 +129,7 @@ export async function main(ns) {
       // if not, proceed normally
       let growThreadToUse = growThread;
       if (growThread + weakenThread > growWeakenHostCapacity) {
-        growThreadToUse = growWeakenHostCapacity * 0.7;
+        growThreadToUse = Math.ceil(growWeakenHostCapacity * 0.7);
       }
 
       if (growThreadToUse > 0) {
