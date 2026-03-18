@@ -1,6 +1,7 @@
 /** @param {NS} ns */
 export async function main(ns) {
-  // This script assumes root access to target is true. 
+  // This script assumes root access to target is true.
+  // Better deployed from batch-one-server-deploy.js or batch-multi-servers-deploy.js
 
   // Initial Parameters
   // To call script from terminal --> run v052-batch-hack.js hack-script-host-name target-server-name

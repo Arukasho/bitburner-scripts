@@ -47,8 +47,8 @@ export async function main(ns) {
     ns.tprint(`------ No: ${i + 1} ------`)
     ns.tprint(`Server's name: ${serv}`)
     ns.tprint(`Root access: ${ns.hasRootAccess(serv)}`);
-    ns.tprint(`Max Money: ${maxMoney}M`);
-    ns.tprint(`Current Money: ${currMoney}M`);
+    ns.tprint(`Max Money: ${maxMoney}m`);
+    ns.tprint(`Current Money: ${currMoney}m`);
     ns.tprint(`Security Level: ${servSecurity}`);
     ns.tprint(`Minimum Security Level: ${minSecurity}`);
     ns.tprint(`Hack level: ${ns.getServerRequiredHackingLevel(serv)}`);

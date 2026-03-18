@@ -13,8 +13,11 @@ export async function main(ns) {
   // we'll weaken it before doing anything else
   const securityThresh = ns.getServerMinSecurityLevel(target);
 
+  let cycleCounter = 0;
+
   // Infinite loop that continously hacks/grows/weakens the target server
   while (true) {
+    ns.print(`----- Cycle No.${cycleCounter++} -----`)
     if (ns.getServerSecurityLevel(target) > securityThresh + 5) {
       // If the server's security level is above our threshold, weaken it
       await ns.weaken(target);

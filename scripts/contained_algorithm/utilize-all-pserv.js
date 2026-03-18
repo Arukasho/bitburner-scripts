@@ -2,7 +2,7 @@
 export async function main(ns) {
   const utilizedServers = ns.getPurchasedServers();
 
-  const target = "n00dles";
+  const target = "joesguns";
   const usedScript = "contained_algorithm/self-contained-algorithm.js";
   const ramUsed = 2.6 // RAM usage per script (in GB)
 
